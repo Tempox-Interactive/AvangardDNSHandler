@@ -130,7 +130,7 @@ def domain_matches(qname, domain):
         return True
     return q.endswith("." + d)
 
-class SimpleNintendoDNS:
+class AvangardDNSHandler:
     def resolve(self, request, handler):
         config = load_config()
         blacklist = load_list(BLACKLIST_FILE)
